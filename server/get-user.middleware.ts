@@ -15,7 +15,7 @@ export function retrieveUserIdFromRequest(req: Request, res: Response, next: Nex
             .catch(err => {
                 console.error(err);
                 next();
-        })
+        });
     }
     else {
       next();
